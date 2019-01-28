@@ -5,4 +5,14 @@
     <url>%2F2019%2F01%2F27%2FBlog%201%20_%20LaTex%2F</url>
     <content type="text"><![CDATA[title: Share a head of SOP in LaTex. 1234567891011121314151617181920212223242526272829303132333435363738394041\documentclass&#123;article&#125;\usepackage[letterpaper,margin=1in]&#123;geometry&#125;\usepackage&#123;xcolor&#125;\usepackage&#123;fancyhdr&#125;\usepackage&#123;tgschola&#125; % or any other font package you like\pagestyle&#123;fancy&#125;\fancyhf&#123;&#125;\fancyhead[C]&#123;% \footnotesize\sffamily \yourname\quad web: \textcolor&#123;blue&#125;&#123;\itshape\yourweb&#125;\quad \textcolor&#123;blue&#125;&#123;\youremail&#125;&#125;\newcommand&#123;\soptitle&#125;&#123;Statement of Purpose&#125;\newcommand&#123;\yourname&#125;&#123;yourname&#125;\newcommand&#123;\youremail&#125;&#123;youremail@mail.com&#125;\newcommand&#123;\yourweb&#125;&#123;https://yourweb&#125;\newcommand&#123;\statement&#125;[1]&#123;\par\medskip \underline&#123;\textcolor&#123;blue&#125;&#123;\textbf&#123;#1:&#125;&#125;&#125;\space&#125;\usepackage[ colorlinks, breaklinks, pdftitle=&#123;\yourname - \soptitle&#125;, pdfauthor=&#123;\yourname&#125;, unicode]&#123;hyperref&#125;\begin&#123;document&#125;\begin&#123;center&#125;\LARGE\soptitle\\\large of \yourname\ (** Master applicant for Fall 20**)\end&#123;center&#125;\hrule\vspace&#123;1pt&#125;\hrule height 1pt\end&#123;document&#125; 这是标题部分。预览图如下：]]></content>
   </entry>
+  <entry>
+    <title><![CDATA[about]]></title>
+    <url>%2Fabout%2Findex.html</url>
+    <content type="text"><![CDATA[happy when coding…]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[tags]]></title>
+    <url>%2Ftags%2Findex.html</url>
+    <content type="text"></content>
+  </entry>
 </search>

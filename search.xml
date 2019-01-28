@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[hexo主题配置备忘录]]></title>
     <url>%2F2019%2F01%2F28%2Fhexo%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E5%A4%87%E5%BF%98%E5%BD%95%2F</url>
-    <content type="text"><![CDATA[修改next主题备忘录（持续更新） 修改主题字体。在hexo/themes/next/source/css/_variables/base.styl中修改$font-family-chinese = &quot;SignPainter&quot;效果图可见我主页SignPainter 可改成你喜欢的字体。参考：NexT常见问题]]></content>
+    <content type="text"><![CDATA[修改next主题备忘录（持续更新） 修改主题字体。在hexo/themes/next/source/css/_variables/base.styl中修改$font-family-chinese = &quot;SignPainter&quot;效果图可见我主页SignPainter 可改成你喜欢的字体。参考：NexT常见问题 添加搜索功能。在hexo根目录下终端执行npm install hexo-generator-searchdb --save；打开站点配置文件_config.yml，新增如下内容： 12345search: path: search.xml field: post format: html limit: 10000 打开主题配置文件_config.yml，搜索local_search，改为： 12local_search: enable: true 参考：hexo - Next 主题添加搜索功能]]></content>
       <tags>
         <tag>hexo</tag>
       </tags>

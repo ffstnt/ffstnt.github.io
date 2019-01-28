@@ -376,7 +376,7 @@
                 
               
 
-              <time title="创建时间：2019-01-28 20:46:22 / 修改时间：20:53:49" itemprop="dateCreated datePublished" datetime="2019-01-28T20:46:22+08:00">2019-01-28</time>
+              <time title="创建时间：2019-01-28 20:46:22 / 修改时间：21:46:53" itemprop="dateCreated datePublished" datetime="2019-01-28T20:46:22+08:00">2019-01-28</time>
             
 
             
@@ -421,6 +421,13 @@
 <ol>
 <li>修改主题字体。<br>在<code>hexo/themes/next/source/css/_variables/base.styl</code>中修改<code>$font-family-chinese      = &quot;SignPainter&quot;</code>效果图可见我主页<img src="https://img-blog.csdnimg.cn/20190128204515541.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzMzI1OTAx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>SignPainter 可改成你喜欢的字体。<br>参考：<a href="https://theme-next.iissnan.com/faqs.html#custom-font" target="_blank" rel="noopener">NexT常见问题</a></li>
 </ol>
+<ol start="2">
+<li>添加搜索功能。在hexo根目录下终端执行<code>npm install hexo-generator-searchdb --save</code>；打开站点配置文件_config.yml，新增如下内容：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br></pre></td></tr></table></figure>
+<p> 打开主题配置文件_config.yml，搜索local_search，改为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">local_search:</span><br><span class="line">  enable: true</span><br></pre></td></tr></table></figure>
+<p>参考：<a href="https://yashuning.github.io/2018/06/29/hexo-Next-%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/" target="_blank" rel="noopener">hexo - Next 主题添加搜索功能</a></p>
 
           
         

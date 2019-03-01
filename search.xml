@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>科学上网</title>
+      <link href="/2019/03/01/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+      <url>/2019/03/01/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</url>
+      
+        <content type="html"><![CDATA[<p>记录下找资料的过程备忘：<br>1.登陆vultr,restart服务器；<br>2.终端输入<code>sudo -i</code>进入root，连接服务器，输入<code>ssh root@服务器IP</code>；<br>3.<code>cd SSR*</code>;<br>4.<code>ssr</code>;<br>5.打开SSX.APP。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 备忘录 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>hexo主题配置备忘录</title>
       <link href="/2019/01/28/hexo%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E5%A4%87%E5%BF%98%E5%BD%95/"/>
       <url>/2019/01/28/hexo%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E5%A4%87%E5%BF%98%E5%BD%95/</url>
@@ -15,25 +34,6 @@
         <tags>
             
             <tag> hexo </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>科学上网</title>
-      <link href="/2019/01/28/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
-      <url>/2019/01/28/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</url>
-      
-        <content type="html"><![CDATA[<p>记录下找资料的过程备忘：<br>1.登陆vultr,restart服务器；<br>2.终端输入<code>sudo -i</code>进入root，连接服务器，输入<code>ssh root@服务器IP</code>；<br>3.<code>cd SSR*</code>;<br>4.<code>ssr</code>;<br>5.打开SSX.APP。</p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 备忘录 </tag>
             
         </tags>
       

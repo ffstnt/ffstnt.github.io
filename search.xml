@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title></title>
+    <url>%2F2019%2F05%2F09%2FAnaconda%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B8%80%EF%BC%9A%E5%9F%BA%E7%A1%80%E7%82%B9%E7%BA%BF%E5%9B%BE%2F</url>
+    <content type="text"><![CDATA[Anaconda 学习笔记一：基础点线图来源：beyond_LH需用 numpy, matplotlib, pyplot代码如下1234567891011121314151617181920212223242526272829303132333435363738394041424344454647import numpy as npimport matplotlib as mplimport matplotlib.pyplot as pt # 通过rcParams设置全局横纵轴字体大小mpl.rcParams[&apos;xtick.labelsize&apos;] = 15mpl.rcParams[&apos;ytick.labelsize&apos;] = 15 #当我们设置相同的seed，每次生成的随机数相同#如果不设置seed，则每次会生成不同的随机数np.random.seed(10) # x轴的采样点，从0~5之间等间隔取100个数x = np.linspace(0, 5, 100) # 通过下面曲线加上噪声生成数据，需要提供数据和拟合模型y = 2*np.sin(x) + 0.3*x**2y_data = y + np.random.normal(scale=0.3, size=100) # figure()指定图表名称# &apos;.&apos;标明画散点图，每个散点的形状是个圆pt.figure(&apos;data&apos;)pt.plot(x, y_data, &apos;.&apos;)pt.title(&apos;data&apos;) # 绘制模型图，plot函数默认画连线图pt.figure(&apos;model&apos;)pt.plot(x, y)pt.title(&apos;model&apos;) # 将两个图画综合在一起#r表示线条的颜色，lw为其宽度pt.figure(&apos;data &amp; model&apos;)pt.plot(x, y, &apos;r&apos;, lw=4)pt.title(&apos;data&amp;model&apos;) # scatter可以更容易地生成散点图,可以设置各种属性#c为颜色属性，marker为形状属性，还有很多，大家可以自查pt.scatter(x, y_data,c=&apos;m&apos;,marker=&apos;^&apos;) #显示图例pt.legend([&apos;m&apos;,&apos;d&apos;])# 将当前figure的图保存到文件result.pngpt.savefig(&apos;result.png&apos;) # 将图形显示在屏幕上pt.show()]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[科学上网（MAC端）]]></title>
     <url>%2F2019%2F03%2F01%2F%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%2F</url>
     <content type="text"><![CDATA[记录下找资料的过程备忘：1.登陆vultr,restart服务器；2.终端输入sudo -i进入root，连接服务器，输入ssh root@服务器IP；3.cd SSR*;4.ssr;5.打开SSX.APP。]]></content>

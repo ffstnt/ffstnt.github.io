@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="因为Mac自带python是2.x版本，我用pip安装了python3.x，用jupyter notebook发现无法使用import pandas, matplotlib等等包，Google了很多，最后我的解决方式如下：  解决jupyter command not found:   安装python3:pip3 install jupyter  在弹出的常常一串字的最后一段出现了我们juypt">
+<meta name="description" content="因为Mac自带python是2.x版本，我用pip安装了python3.x，用jupyter notebook发现无法使用import pandas, matplotlib等等包，Google了很多，最后我的解决方式如下： +– 解决jupyter command not found:   安装python3:pip3 install jupyter  在弹出的常常一串字的最后一段出现了我们juy">
 <meta name="keywords" content="Anaconda,Jupyter notebook">
 <meta property="og:type" content="article">
 <meta property="og:title" content="anaconda学习笔记二 解决Mac终端jupyter command not found问题">
 <meta property="og:url" content="http://yoursite.com/2019/05/13/anaconda学习笔记之二 解决Mac终端jupyter command not found问题/index.html">
 <meta property="og:site_name" content="ffstnt&#39;s Coding Blog">
-<meta property="og:description" content="因为Mac自带python是2.x版本，我用pip安装了python3.x，用jupyter notebook发现无法使用import pandas, matplotlib等等包，Google了很多，最后我的解决方式如下：  解决jupyter command not found:   安装python3:pip3 install jupyter  在弹出的常常一串字的最后一段出现了我们juypt">
+<meta property="og:description" content="因为Mac自带python是2.x版本，我用pip安装了python3.x，用jupyter notebook发现无法使用import pandas, matplotlib等等包，Google了很多，最后我的解决方式如下： +– 解决jupyter command not found:   安装python3:pip3 install jupyter  在弹出的常常一串字的最后一段出现了我们juy">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-13T17:02:04.597Z">
+<meta property="og:updated_time" content="2019-05-13T18:12:18.796Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="anaconda学习笔记二 解决Mac终端jupyter command not found问题">
-<meta name="twitter:description" content="因为Mac自带python是2.x版本，我用pip安装了python3.x，用jupyter notebook发现无法使用import pandas, matplotlib等等包，Google了很多，最后我的解决方式如下：  解决jupyter command not found:   安装python3:pip3 install jupyter  在弹出的常常一串字的最后一段出现了我们juypt">
+<meta name="twitter:description" content="因为Mac自带python是2.x版本，我用pip安装了python3.x，用jupyter notebook发现无法使用import pandas, matplotlib等等包，Google了很多，最后我的解决方式如下： +– 解决jupyter command not found:   安装python3:pip3 install jupyter  在弹出的常常一串字的最后一段出现了我们juy">
 
 
 
@@ -337,6 +337,37 @@
           
 
           
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                  
+                </span>
+              
+            </div>
+          
 
           
 
@@ -354,7 +385,7 @@
 
       
         <p>因为Mac自带python是2.x版本，我用pip安装了python3.x，用jupyter notebook发现无法使用import pandas, matplotlib等等包，Google了很多，最后我的解决方式如下：</p>
-<p> <strong>解决jupyter command not found:</strong></p>
+<p>+– <strong>解决jupyter command not found:</strong></p>
 <ul>
 <li style="list-style: none"><input type="checkbox"> 安装python3:<code>pip3 install jupyter</code></li>
 <li style="list-style: none"><input type="checkbox"> 在弹出的常常一串字的最后一段出现了我们juypter的安装位置<code>Requirement already satisfied: parso&gt;=0.3.0 in /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (from jedi&gt;=0.10-&gt;ipython&gt;=5.0.0-&gt;ipykernel-&gt;jupyter) (0.3.1)</code></li>
@@ -364,13 +395,13 @@
 <li style="list-style: none"><input type="checkbox"> 接着在终端输入<code>source .bash_profile</code>按回车</li>
 <li style="list-style: none"><input type="checkbox"> 输入<code>jupyter notebook</code>弹出jupyter notebook网页，成功打开。</li>
 </ul>
-<p><strong>解决jupyter notebook无法import pandas等包</strong></p>
+<p>+– <strong>解决jupyter notebook无法import pandas等包</strong></p>
 <ul>
 <li style="list-style: none"><input type="checkbox"> 在完成上述操作后，在notebook中输入<code>import pandas as pd</code><br><code>names1880 = pd.read_csv(&#39;name/yob1880.txt&#39;, names = [&#39;name&#39;, &#39;sex&#39;, &#39;births&#39;])</code>提示files not found，终于不是modules not found了。。</li>
 <li style="list-style: none"><input type="checkbox"> 接着试着输入学习笔记一中基础点线图代码，没有报错。之前学习笔记一基础点线图代码我是在jupyter终端中输入的，这个demo可以完美运行，但是在notebook中提示modules not found。</li>
 <li style="list-style: none"><input type="checkbox"> 我google了原因，可能是notebook的kernel与终端的kernel不一致，终端能运行，说明终端的kernel没问题，问题出在notebook的kernel上。然后我分别在notebook和jupyter 终端中中输入<code>import sys</code><br><code>sys.executable</code>两个运行结果不一致。</li>
 </ul>
-<p><strong>jupyter command not found解决之后我又出了个新问题，在打开的jupyter notebook网页中，无法正常打开terminal，但notebook又是正常的。。。现在试着来解决两个kernel不一致的问题</strong></p>
+<p>+– <strong>jupyter command not found解决之后我又出了个新问题，在打开的jupyter notebook网页中，无法正常打开terminal，但notebook又是正常的。。。现在试着来解决两个kernel不一致的问题</strong></p>
 <ul>
 <li style="list-style: none"><input type="checkbox"> 首先在终端中输入<code>ipython kernelspec list</code>回车</li>
 <li><p>[ ] 接着输入<code>open + 刚复制的路径</code>找到并打开kernel.json文件</p>
@@ -504,10 +535,10 @@
               
               
               <div class="site-state-item site-state-categories">
-                
+                <a href="/categories/categories.html">
                   <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">categories</span>
-                
+                </a>
               </div>
             
 
@@ -559,6 +590,15 @@
   </span>
   <span class="author" itemprop="copyrightHolder">ffstnt</span>
 
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count"></span>
   
 </div>
 

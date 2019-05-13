@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="Anaconda 学习笔记一：基础点线图来源：beyond_LH需用 numpy, matplotlib, pyplot代码如下1234567891011121314151617181920212223242526272829303132333435363738394041424344454647import numpy as npimport matplotlib as mplimport ma">
+<meta name="description" content="Anaconda 学习笔记一：基础点线图来源：beyond_LH+– 需用 numpy, matplotlib, pyplot+– 代码如下1234567891011121314151617181920212223242526272829303132333435363738394041424344454647import numpy as npimport matplotlib as mplimp">
 <meta name="keywords" content="Anaconda">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Anaconda 学习笔记一：基础点线图">
 <meta property="og:url" content="http://yoursite.com/2019/05/09/Anaconda 学习笔记一：基础点线图/index.html">
 <meta property="og:site_name" content="ffstnt&#39;s Coding Blog">
-<meta property="og:description" content="Anaconda 学习笔记一：基础点线图来源：beyond_LH需用 numpy, matplotlib, pyplot代码如下1234567891011121314151617181920212223242526272829303132333435363738394041424344454647import numpy as npimport matplotlib as mplimport ma">
+<meta property="og:description" content="Anaconda 学习笔记一：基础点线图来源：beyond_LH+– 需用 numpy, matplotlib, pyplot+– 代码如下1234567891011121314151617181920212223242526272829303132333435363738394041424344454647import numpy as npimport matplotlib as mplimp">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-13T17:01:27.735Z">
+<meta property="og:updated_time" content="2019-05-13T18:10:12.423Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Anaconda 学习笔记一：基础点线图">
-<meta name="twitter:description" content="Anaconda 学习笔记一：基础点线图来源：beyond_LH需用 numpy, matplotlib, pyplot代码如下1234567891011121314151617181920212223242526272829303132333435363738394041424344454647import numpy as npimport matplotlib as mplimport ma">
+<meta name="twitter:description" content="Anaconda 学习笔记一：基础点线图来源：beyond_LH+– 需用 numpy, matplotlib, pyplot+– 代码如下1234567891011121314151617181920212223242526272829303132333435363738394041424344454647import numpy as npimport matplotlib as mplimp">
 
 
 
@@ -337,6 +337,37 @@
           
 
           
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                  
+                </span>
+              
+            </div>
+          
 
           
 
@@ -353,7 +384,7 @@
       
 
       
-        <p>Anaconda 学习笔记一：基础点线图<br>来源：<a href="https://blog.csdn.net/beyond9305/article/details/79666225" target="_blank" rel="noopener">beyond_LH</a><br>需用 numpy, matplotlib, pyplot<br>代码如下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line">import matplotlib as mpl</span><br><span class="line">import matplotlib.pyplot as pt</span><br><span class="line"> </span><br><span class="line"># 通过rcParams设置全局横纵轴字体大小</span><br><span class="line">mpl.rcParams[&apos;xtick.labelsize&apos;] = 15</span><br><span class="line">mpl.rcParams[&apos;ytick.labelsize&apos;] = 15</span><br><span class="line"> </span><br><span class="line">#当我们设置相同的seed，每次生成的随机数相同</span><br><span class="line">#如果不设置seed，则每次会生成不同的随机数</span><br><span class="line">np.random.seed(10)</span><br><span class="line"> </span><br><span class="line"># x轴的采样点，从0~5之间等间隔取100个数</span><br><span class="line">x = np.linspace(0, 5, 100)</span><br><span class="line"> </span><br><span class="line"># 通过下面曲线加上噪声生成数据，需要提供数据和拟合模型</span><br><span class="line">y = 2*np.sin(x) + 0.3*x**2</span><br><span class="line">y_data = y + np.random.normal(scale=0.3, size=100)</span><br><span class="line"> </span><br><span class="line"># figure()指定图表名称</span><br><span class="line"># &apos;.&apos;标明画散点图，每个散点的形状是个圆</span><br><span class="line">pt.figure(&apos;data&apos;)</span><br><span class="line">pt.plot(x, y_data, &apos;.&apos;)</span><br><span class="line">pt.title(&apos;data&apos;)</span><br><span class="line"> </span><br><span class="line"># 绘制模型图，plot函数默认画连线图</span><br><span class="line">pt.figure(&apos;model&apos;)</span><br><span class="line">pt.plot(x, y)</span><br><span class="line">pt.title(&apos;model&apos;)</span><br><span class="line"> </span><br><span class="line"># 将两个图画综合在一起</span><br><span class="line">#r表示线条的颜色，lw为其宽度</span><br><span class="line">pt.figure(&apos;data &amp; model&apos;)</span><br><span class="line">pt.plot(x, y, &apos;r&apos;, lw=4)</span><br><span class="line">pt.title(&apos;data&amp;model&apos;)</span><br><span class="line"> </span><br><span class="line"># scatter可以更容易地生成散点图,可以设置各种属性</span><br><span class="line">#c为颜色属性，marker为形状属性，还有很多，大家可以自查</span><br><span class="line">pt.scatter(x, y_data,c=&apos;m&apos;,marker=&apos;^&apos;)</span><br><span class="line"> </span><br><span class="line">#显示图例</span><br><span class="line">pt.legend([&apos;m&apos;,&apos;d&apos;])</span><br><span class="line"># 将当前figure的图保存到文件result.png</span><br><span class="line">pt.savefig(&apos;result.png&apos;)</span><br><span class="line"> </span><br><span class="line"># 将图形显示在屏幕上</span><br><span class="line">pt.show()</span><br></pre></td></tr></table></figure></p>
+        <p>Anaconda 学习笔记一：基础点线图<br>来源：<a href="https://blog.csdn.net/beyond9305/article/details/79666225" target="_blank" rel="noopener">beyond_LH</a><br>+– 需用 numpy, matplotlib, pyplot<br>+– 代码如下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line">import matplotlib as mpl</span><br><span class="line">import matplotlib.pyplot as pt</span><br><span class="line"> </span><br><span class="line"># 通过rcParams设置全局横纵轴字体大小</span><br><span class="line">mpl.rcParams[&apos;xtick.labelsize&apos;] = 15</span><br><span class="line">mpl.rcParams[&apos;ytick.labelsize&apos;] = 15</span><br><span class="line"> </span><br><span class="line">#当我们设置相同的seed，每次生成的随机数相同</span><br><span class="line">#如果不设置seed，则每次会生成不同的随机数</span><br><span class="line">np.random.seed(10)</span><br><span class="line"> </span><br><span class="line"># x轴的采样点，从0~5之间等间隔取100个数</span><br><span class="line">x = np.linspace(0, 5, 100)</span><br><span class="line"> </span><br><span class="line"># 通过下面曲线加上噪声生成数据，需要提供数据和拟合模型</span><br><span class="line">y = 2*np.sin(x) + 0.3*x**2</span><br><span class="line">y_data = y + np.random.normal(scale=0.3, size=100)</span><br><span class="line"> </span><br><span class="line"># figure()指定图表名称</span><br><span class="line"># &apos;.&apos;标明画散点图，每个散点的形状是个圆</span><br><span class="line">pt.figure(&apos;data&apos;)</span><br><span class="line">pt.plot(x, y_data, &apos;.&apos;)</span><br><span class="line">pt.title(&apos;data&apos;)</span><br><span class="line"> </span><br><span class="line"># 绘制模型图，plot函数默认画连线图</span><br><span class="line">pt.figure(&apos;model&apos;)</span><br><span class="line">pt.plot(x, y)</span><br><span class="line">pt.title(&apos;model&apos;)</span><br><span class="line"> </span><br><span class="line"># 将两个图画综合在一起</span><br><span class="line">#r表示线条的颜色，lw为其宽度</span><br><span class="line">pt.figure(&apos;data &amp; model&apos;)</span><br><span class="line">pt.plot(x, y, &apos;r&apos;, lw=4)</span><br><span class="line">pt.title(&apos;data&amp;model&apos;)</span><br><span class="line"> </span><br><span class="line"># scatter可以更容易地生成散点图,可以设置各种属性</span><br><span class="line">#c为颜色属性，marker为形状属性，还有很多，大家可以自查</span><br><span class="line">pt.scatter(x, y_data,c=&apos;m&apos;,marker=&apos;^&apos;)</span><br><span class="line"> </span><br><span class="line">#显示图例</span><br><span class="line">pt.legend([&apos;m&apos;,&apos;d&apos;])</span><br><span class="line"># 将当前figure的图保存到文件result.png</span><br><span class="line">pt.savefig(&apos;result.png&apos;)</span><br><span class="line"> </span><br><span class="line"># 将图形显示在屏幕上</span><br><span class="line">pt.show()</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -474,10 +505,10 @@
               
               
               <div class="site-state-item site-state-categories">
-                
+                <a href="/categories/categories.html">
                   <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">categories</span>
-                
+                </a>
               </div>
             
 
@@ -529,6 +560,15 @@
   </span>
   <span class="author" itemprop="copyrightHolder">ffstnt</span>
 
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count"></span>
   
 </div>
 

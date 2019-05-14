@@ -1,0 +1,80 @@
+<h1 id="github-com-google-fonts-git-repo-trivia"><a href="#github-com-google-fonts-git-repo-trivia" class="headerlink" title="github.com/google/fonts.git repo trivia"></a>github.com/google/fonts.git repo trivia</h1><h2 id="Incomplete-greek-ext-subsets"><a href="#Incomplete-greek-ext-subsets" class="headerlink" title="Incomplete greek-ext subsets"></a>Incomplete greek-ext subsets</h2><p>Open Sans (and some others, like Roboto) are advertised as they supporting Extended Greek, but choosing the greek-ext subset will not display Open Sans (or the required font) for this range because they don’t actually contain the required characters.<br>You’re welcome to commission these characters, though.</p>
+<h2 id="Google-Fonts-Repo-Wiki"><a href="#Google-Fonts-Repo-Wiki" class="headerlink" title="Google Fonts Repo Wiki"></a>Google Fonts Repo Wiki</h2><p>The previous fonts Mercurial repository had a wiki at <a href="https://code.google.com/p/googlefontdirectory/wiki">https://code.google.com/p/googlefontdirectory/wiki</a> which is no longer available.<br>The contents of the wiki are now available here:</p>
+<p><a href="https://github.com/googlefonts/gf-docs">https://github.com/googlefonts/gf-docs</a></p>
+<h2 id="Duplicated-fonts"><a href="#Duplicated-fonts" class="headerlink" title="Duplicated fonts"></a>Duplicated fonts</h2><p>There are some similarly named pairs of directories which each have identically named font files.<br>These files are redundant, and exist following the renaming of a family.<br>The initial directories are kept so that people already using that initial name can continue to do so.<br>They are no longer listed in the main <a href="http://www.google.com/fonts">www.google.com/fonts</a> directory, but the files exist in this repo since they are still served via the Google Fonts API. </p>
+<ul>
+<li><code>ofl/alefhebrew</code> and <code>ofl/alef</code> contain <code>Alef-Regular.ttf</code> and <code>Alef-Bold.ttf</code></li>
+<li><code>ofl/mrbedford</code> and <code>ofl/mrbedfort</code> contain <code>MrBedfort-Regular.ttf</code></li>
+<li><code>ofl/mrssaintdelafield</code> and <code>ofl/misssaintdelafield</code> contain <code>MrsSaintDelafield-Regular.ttf</code></li>
+<li><code>ofl/siamreap</code> and <code>ofl/siemreap</code> contain <code>Siemreap.ttf</code></li>
+<li><code>ofl/terminaldosis</code> and <code>ofl/dosis</code> contain the same files (renamed) and <code>ofl/terminaldosislight</code> contain <code>TerminalDosis-Light.ttf</code></li>
+</ul>
+<h2 id="Missing-METADATA-pb-files"><a href="#Missing-METADATA-pb-files" class="headerlink" title="Missing METADATA.pb files"></a>Missing METADATA.pb files</h2><p>Fonts in Early Access do not have METADATA.pb files.</p>
+<h2 id="Install-on-Windows"><a href="#Install-on-Windows" class="headerlink" title="Install on Windows"></a>Install on Windows</h2><p>You can install all of the fonts using Windows PowerShell. Change directories to the folder where you downloaded the package, and run the following command:</p>
+<pre><code>$fonts = (New-Object -ComObject Shell.Application).Namespace(0x14)
+dir ofl/*/*.ttf | %{ $fonts.CopyHere($_.fullname) }
+</code></pre><h2 id="3rd-Party-Directories"><a href="#3rd-Party-Directories" class="headerlink" title="3rd Party Directories"></a>3rd Party Directories</h2><p>The <a href="http://www.google.com/fonts">www.google.com/fonts</a> directory is accompanied by a <a href="https://developers.google.com/fonts/docs/developer_api">Google Fonts Developer API</a> which provides raw data for constructing such a directory in JSON format.<br>Here is a list of 3rd party directories:</p>
+<ul>
+<li><a href="http://font-combinator.com">http://font-combinator.com</a> + <a href="http://chipcullen.com/font-combinator">http://chipcullen.com/font-combinator</a></li>
+<li><a href="https://www.typetester.org">https://www.typetester.org</a></li>
+<li><a href="http://font-combinator.com">http://font-combinator.com</a></li>
+<li><a href="http://somadesign.ca/demos/better-google-fonts">http://somadesign.ca/demos/better-google-fonts</a></li>
+<li><a href="http://fontapp.org">http://fontapp.org</a></li>
+<li><a href="http://fontapp.org/graph">http://fontapp.org/graph</a></li>
+<li><a href="http://katydecorah.com/font-library">http://katydecorah.com/font-library</a></li>
+<li><a href="http://fontcdn.org">http://fontcdn.org</a></li>
+<li><a href="http://googlefontsdirectory.org">http://googlefontsdirectory.org</a></li>
+<li><a href="https://hail2u.github.io/mn">https://hail2u.github.io/mn</a></li>
+<li><a href="http://fontflame.com">http://fontflame.com</a></li>
+<li><a href="http://jenniferdewalt.com/gfboom/page">http://jenniferdewalt.com/gfboom/page</a></li>
+<li><a href="http://fontpair.co">http://fontpair.co</a></li>
+<li><a href="https://typ.io">https://typ.io</a></li>
+<li><a href="http://andreasweis.com/webfontblender">http://andreasweis.com/webfontblender</a></li>
+<li><a href="http://www.typegenius.com">http://www.typegenius.com</a></li>
+<li><a href="http://abbychen.me/punch">http://abbychen.me/punch</a></li>
+<li><a href="http://typewonder.com">http://typewonder.com</a></li>
+<li><a href="http://www.localfont.com">http://www.localfont.com</a></li>
+<li><a href="http://open-foundry.com">http://open-foundry.com</a></li>
+<li><a href="https://typeresources.github.io/glyph-gazer">https://typeresources.github.io/glyph-gazer</a></li>
+<li><a href="http://cdn.canelodigital.cl/fonts">http://cdn.canelodigital.cl/fonts</a></li>
+<li><a href="http://code.thisarmy.com/fontsinfo">http://code.thisarmy.com/fontsinfo</a></li>
+<li><a href="http://www.localfont.com">http://www.localfont.com</a></li>
+<li><a href="http://brandmark.io/font-generator">http://brandmark.io/font-generator</a></li>
+<li><a href="http://archetypeapp.com">http://archetypeapp.com</a></li>
+<li><a href="https://getflourish.github.io/anatomy-of-typefaces">https://getflourish.github.io/anatomy-of-typefaces</a></li>
+<li><a href="https://tyffle.ml">https://tyffle.ml</a></li>
+<li><a href="https://lepovirta.github.io/Typographer">https://lepovirta.github.io/Typographer</a> </li>
+<li><a href="https://lepovirta.github.io/Typographer-React">https://lepovirta.github.io/Typographer-React</a></li>
+<li><a href="https://jmattthew.github.io/better-font-finder/better-font-finder.html">https://jmattthew.github.io/better-font-finder/better-font-finder.html</a></li>
+</ul>
+<p>There are also handcrafted directories with rich samples:</p>
+<ul>
+<li><a href="http://hellohappy.org/beautiful-web-type">http://hellohappy.org/beautiful-web-type</a></li>
+<li><a href="http://femmebot.github.io/google-type">http://femmebot.github.io/google-type</a></li>
+<li><a href="http://100daysoffonts.com">http://100daysoffonts.com</a></li>
+<li><a href="http://jxnblk.com/type-a">http://jxnblk.com/type-a</a></li>
+<li><a href="https://jonsuh.com/100-days-of-scriptures">https://jonsuh.com/100-days-of-scriptures</a></li>
+<li><a href="http://codepen.io/nxworld/pen/XKRaRm">http://codepen.io/nxworld/pen/XKRaRm</a></li>
+<li><a href="https://twitter.com/FontSnek">https://twitter.com/FontSnek</a></li>
+<li><a href="https://www.reliablepsd.com/ultimate-google-font-pairings">https://www.reliablepsd.com/ultimate-google-font-pairings</a></li>
+<li><a href="http://fonts.greatsimple.io">http://fonts.greatsimple.io</a></li>
+<li><a href="https://digitalsynopsis.com/design/best-google-font-combinations-typeface-pairings/">https://digitalsynopsis.com/design/best-google-font-combinations-typeface-pairings/</a></li>
+</ul>
+<h2 id="Rightsholder-contacts"><a href="#Rightsholder-contacts" class="headerlink" title="Rightsholder contacts"></a>Rightsholder contacts</h2><p>This shell command shows all email addresses for font copyright holders listed in the METADATA.pb files:</p>
+<pre><code>grep copyright\: */*/MET* | grep \@ |  perl -ne&apos;if(/[\w\.\-\_]+@([\w\-\_]+\.)+[A-Za-z]{2,4}/g){print &quot;$&amp;\n&quot;}&apos; | sort | uniq
+</code></pre><p>This shell command shows all the families without a contact email address:</p>
+<pre><code>grep copyright\: */*/MET* | grep -v \@ | cut -d\: -f1 | cut -d\/ -f2 | uniq | sort
+</code></pre><p>The copyright holders of those families are mostly Google, SIL, Adobe, Canonical, Naver, and a couple of outliers. </p>
+<h2 id="Articles-about-Google-Fonts"><a href="#Articles-about-Google-Fonts" class="headerlink" title="Articles about Google Fonts"></a>Articles about Google Fonts</h2><p>Some interesting articles about Google Fonts:</p>
+<ul>
+<li><a href="http://googlecode.blogspot.com/2010/05/introducing-google-font-api-google-font.html">http://googlecode.blogspot.com/2010/05/introducing-google-font-api-google-font.html</a></li>
+<li><a href="http://googlewebfonts.blogspot.com">http://googlewebfonts.blogspot.com</a></li>
+<li><a href="https://design.google.com/articles/reimagining-google-fonts">https://design.google.com/articles/reimagining-google-fonts</a></li>
+<li><a href="https://medium.com/google-design/introducing-space-mono-a-new-monospaced-typeface-by-colophon-foundry-for-google-fonts-84367eac6dfb">https://medium.com/google-design/introducing-space-mono-a-new-monospaced-typeface-by-colophon-foundry-for-google-fonts-84367eac6dfb</a></li>
+<li><a href="http://www.fastcodesign.com/3033126/roboto-rebooted-why-google-plans-to-update-its-font-like-the-rest-of-its-products">http://www.fastcodesign.com/3033126/roboto-rebooted-why-google-plans-to-update-its-font-like-the-rest-of-its-products</a></li>
+</ul>
+<h2 id="Interesting-Libre-Fonts-Not-In-Google-Fonts"><a href="#Interesting-Libre-Fonts-Not-In-Google-Fonts" class="headerlink" title="Interesting Libre Fonts Not In Google Fonts"></a>Interesting Libre Fonts Not In Google Fonts</h2><p>Here is a list of some libre fonts made for special purposes (emoij, math, icon, etc) are not available in Google Fonts. </p>
+<ul>
+<li><a href="https://material.io/icons">https://material.io/icons</a></li>
+<li><a href="https://github.com/figs-lab/datalegreya">https://github.com/figs-lab/datalegreya</a></li>
+</ul>
